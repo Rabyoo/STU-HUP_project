@@ -1,0 +1,278 @@
+:root {
+  --primary:#0cd09f;
+  --white:#fff;
+  --transition:0.3s;
+  --black:#111;
+  --text:#555;
+}
+/* Start main */
+main .courses {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 150px;
+    top: 50px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+main .part-left .title h1 {
+    font-size: 32px;
+    font-weight: normal;
+    position: relative;
+    left: 130px;
+    top: 20px;
+}
+main .courses .course {
+    display: flex;
+    gap: 30px;
+    background: #eee;
+    border: 2px solid #eee;
+    width: 570px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+    box-shadow: 3px 3px 5px -4px;
+}
+main .courses .course:hover {
+    background-color: transparent;
+}
+main .courses .course img {
+    border-radius: 15px;
+    height: 130px;
+}
+main .courses .course h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111;
+    margin: 10px 0;
+}
+main .courses .course p {
+    font-size: 16px;
+    color: #444;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+main .courses .course .text a {
+    padding: 5px 20px;
+    border-radius: 35px;
+    border: none;
+    background: #0fd0c8;
+    font-size: 16px;
+    color: #111;
+    cursor: pointer;
+    transition: 0.3s;
+}
+main .courses .course a:hover {
+    background-color: #0fc2bc;
+}
+main .courses .course .icon {
+
+}
+main .courses .course .icon i {
+    background: #0ec7bf;
+    padding: 8px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    left: 25px;
+    transition: 0.3s;
+}
+main .part-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: fit-content;
+    background-color: #f1f1f1;
+}
+main .part-right .video video {
+    position: relative;
+    left: 5%;
+    border: 2px solid #0cd09f;
+    height: 100%;
+    top: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+main .part-right .video::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3%;
+    width: 5px;
+    height: 300px;
+    background-color: #0cd09f;
+}
+main .part-right .text {
+    
+}
+main .part-right .text h2 {
+    position: relative;
+    left: 25px;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    color: #111;
+}
+main .part-right .text .profile {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    gap: 15px;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 35px;
+    box-shadow: 3px 3px 4px -4px;
+}
+main .part-right .text .profile img {
+
+}
+main .part-right .text .profile p {
+    font-size: 18px;
+    color: #111;
+    position: relative;
+    left: -5px;
+}
+main .part-right .text .data {
+    margin: 15px 0;
+    position: relative;
+    left: 25px;
+    display: flex;
+    flex-direction: column;
+}
+main .part-right .text .data i {
+    font-size: 20px;
+    color: #111;
+}
+main .part-right .text .data p {
+    position: relative;
+    left: 25px;
+    top: -18px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+    margin-left: 5px;
+}
+main .part-right .text > h2 {
+    
+}
+main .part-right .text > p {
+    position: relative;
+    left: 25px;
+    font-size: 17px;
+    color: #444;
+    line-height: 1.2;
+}
+main .part-right .text .btn {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    left: 45px;
+    margin-bottom: 50px;
+    margin: 20px 0;
+}
+main .part-right .text .btn a {
+    width: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 550;
+    height: 35px;
+    border-radius: 35px;
+    border: 1px solid #0fc2bc;
+    background-color: #0fc2bc;
+    color: #111;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+main .part-right .text .btn a:hover {
+    background-color: transparent;
+}
+/* End main */
+/* Start Media Query */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80px;
+    }
+    .container .logo i {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 21px !important;
+    }
+    .container .logo {
+        width: 60px;
+        height: 60px;
+    }
+    .container .logo h4 {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+    .container .links div p {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    main {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+main .part-right {
+    position: relative;
+    top: 12%;
+    width: 86%;
+    left: 0;
+}
+main .part-left .title h1 {
+    font-size: 25px;
+    width: fit-content;
+}
+main .courses {
+    position: relative;
+    left: 110px;
+    width: fit-content;
+}
+main .courses .course {
+    width: fit-content;
+    flex-direction: column;
+    height: 250px;
+}
+main .courses .course .text {
+    position: relative;
+    top: -35px;
+}
+main .courses .course h2 {
+    font-size: 16px;
+    width: fit-content;
+    text-align: start;
+}
+main .courses .course p {
+        font-size: 14px;
+    margin-top: -5px;
+}
+main .courses .course button {
+    width: 80px;
+    height: 28px;
+}
+main .courses .course .icon i {
+    position: absolute;
+    left: 88%;
+    /* top: 0; */
+    margin-top: -300px;
+}
+main .part-right .text .btn button {
+    width: 120px;
+    left: -5px;
+}
+main .part-right .text > p {
+    width: 90%;
+}
+}
+/* End Media Query */
+

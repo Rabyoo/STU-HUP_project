@@ -1,0 +1,49 @@
+.products {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    left: -500px;
+    top: 100px;
+    gap: 30px;
+}
+.container .title a {
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    left: -550px;
+    color: #20A4A0;
+    text-decoration: underline;
+}
+.card {
+    width: 250px;
+    box-shadow: 0 5px 10px #1111115f;
+}
+.card h3 {
+    padding: 5px;
+    font-size: 18px;
+}
+.card .rates {
+    padding: 5px;
+}
+.card .rates i {
+    margin-left: 3px;
+    font-size: 18px;
+}
+.card p {
+    padding: 5px;
+    font-size: 16px;
+    color: #444444;
+}
+.card .btn {
+    position: relative;
+    left: 160px;
+    padding: 10px 0;
+}
+.card .btn a {
+    background-color: #20A4A0;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 4px;
+}

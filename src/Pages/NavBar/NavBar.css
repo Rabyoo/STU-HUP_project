@@ -1,0 +1,149 @@
+:host {
+  --pCol:#20A4A0;
+  --pCo2:#F0F0F0;
+  background-color: #FFFFFF;
+}
+
+  /* Large screens */
+  @media only screen and (min-width: 600px) {
+    .navbar {
+      top: 0;
+      width: 5rem;
+      height: 100vh;
+    }
+    .navbar:hover {
+      width: 16rem;
+    }
+  
+    .navbar:hover .link-text {
+      display: inline;
+    }
+  
+    .navbar:hover .logo svg
+    {
+      margin-left: 11rem;
+    }
+  
+    .navbar:hover .logo-text
+    {
+      left: 0px;
+    }
+  }
+   .icon {
+    position: relative;
+    left: 35px;
+    font-size: 16px;
+    color: #111;
+  }
+  .mattoolBarButton {
+    padding: 5px;
+  }
+  .mattoolBarButton:hover {
+    background-color:#b6b6b6;
+  }
+  .icons-link {
+    position: relative;
+    top: -40px;
+  }
+  .icons-link > div {
+    margin: 5px 0;
+  }
+  
+  .dark {
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+  }
+  
+  .light {
+    --text-primary: #1f1f1f;
+    --text-secondary: #000000;
+    --bg-primary: #ffffff;
+    --bg-secondary: #e4e4e4;
+  }
+  
+  .solar {
+    --text-primary: #576e75;
+    --text-secondary: #35535c;
+    --bg-primary: #fdf6e3;
+    --bg-secondary: #f5e5b8;
+  }
+  
+  .theme-icon {
+    display: none;
+  }
+  
+  .dark #darkIcon {
+    display: block;
+  }
+  
+  .light #lightIcon {
+    display: block;
+  }
+  
+  .solar #solarIcon {
+    display: block;
+  } 
+
+
+  .toolbar {
+      height: 100px;
+  }
+  mat-icon {
+      font-size: 20px;
+    }
+    .container {
+      height: 80%;
+    }
+  
+  .toolbarButton , .drawerButton {
+      padding: 10px;
+      background-color:#3e4242;
+  }
+  .icon-size {
+      transform: scale(2);
+   }
+   .burger {
+      color: white;
+   }
+   .drawer:hover {
+   }
+   .mattoolBarButton {
+     text-align: center;
+    }
+    .mattoolBarButton  p{
+      font-size: 0.7rem;
+    }
+    .drawer {
+  
+      height: 100% !important;
+   }
+   .sidebar {
+    width: 6rem;
+    background-color: #F0F0F0;
+    height: 100%;
+    z-index: 99;
+    position: fixed;
+    box-shadow: 0 5px 8px #222;
+   }
+   .sideicon{
+    width: 4.5rem;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-left: 7px;
+    cursor: pointer;
+     
+  }
+   .ico-holder {
+    color:#111;
+   }
+   
+  .mat-mdc-icon-button:focus ,.mat-mdc-icon-button:active, .mat-mdc-icon-button:visited,#routerLinkActive {
+    color: var(--pCol);
+    --mdc-icon-button-icon-color: var(--pCol);
+  --mat-icon-button-state-layer-color:var(--pCol);
+    --mat-icon-button-ripple-color: rgba(10, 44, 33, 0.1);
+  }
+  
+  
